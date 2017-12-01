@@ -1,0 +1,1 @@
+This is an android project please, run with eclipse or android studio with the correct setup. And I develop this on a mac.

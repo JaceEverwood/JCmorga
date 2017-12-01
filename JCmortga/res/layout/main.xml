@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/tableLayout" 
+    android:padding="6dp" 
+    android:stretchColumns="1,2,3" 
+    android:background="#FFF">
+
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/loanTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:lines="2"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/loan_amount"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/loanEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span = "3"
+            android:inputType="numberDecimal" 
+            android:hint="@string/zero" 
+            android:textSize="14sp" 
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/customTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rate" 
+            android:textColor="#000" 
+            android:lines="2" 
+            android:paddingRight="5dp" 
+            android:gravity="right|center_vertical" 
+            android:layout_weight="0"/>
+
+        <SeekBar
+            android:id="@+id/customSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:max="2000"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:progress="500" 
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/customRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/five_percent" 
+            android:textColor="#000" 
+            android:gravity="center_vertical" 
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ten_year" 
+            android:layout_column = "1"
+            android:textColor="#000" 
+            android:gravity="center" 
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/fifteenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteen_year" 
+            android:layout_column = "2"
+            android:textColor="#000" 
+            android:gravity="center" 
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/thirtyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thirty_year" 
+            android:layout_column = "3"
+            android:textColor="#000" 
+            android:gravity="center" 
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/momthlyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:lines="2"
+            android:paddingRight="5dp"
+            android:text="@string/monthly_payment"
+            android:textColor="#000" 
+            android:layout_weight="0"/>
+
+        <EditText
+            android:id="@+id/tenYearEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/zero"
+            android:inputType="numberDecimal"
+            android:textSize="14sp" 
+            android:focusable="false" 
+            android:cursorVisible="false" 
+            android:longClickable="false" 
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/fifteenYearEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" 
+            android:hint="@string/zero" 
+            android:textSize="14sp" 
+            android:focusable="false" 
+            android:cursorVisible="false" 
+            android:longClickable="false" 
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/thirtyYearEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" 
+            android:hint="@string/zero" 
+            android:textSize="14sp" 
+            android:focusable="false" 
+            android:cursorVisible="false" 
+            android:longClickable="false" 
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/downpaymentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/down_payment"
+            android:textColor="#000" 
+            android:lines="2" 
+            android:layout_weight="0"/>
+
+        <EditText
+            android:id="@+id/downpaymentEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_span = "3"
+            android:textSize="14sp" 
+            android:layout_weight="1"
+            android:inputType="numberDecimal" 
+            android:hint="@string/zero"  > 
+           
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/interestRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/interest_rate"
+            android:textColor="#000" 
+            android:lines="2" 
+            android:layout_weight="0"/>
+
+        <EditText
+             android:id="@+id/interestRateEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_span = "3"
+            android:textSize="14sp" 
+            android:layout_weight="1"
+            android:inputType="numberDecimal" 
+            android:hint="@string/zero" />
+
+    </TableRow>/>
+
+    
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/customMonthlyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/custom_monthly"
+            android:textColor="#000" 
+            android:lines="2" 
+            android:layout_weight="0" />
+
+        <EditText
+            android:id="@+id/dShowEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_span = "3"
+            android:textSize="14sp" 
+            android:layout_weight="1"
+            android:inputType="numberDecimal" 
+            android:hint="@string/zero"/>
+
+    </TableRow>
+ />
+
+</TableLayout>

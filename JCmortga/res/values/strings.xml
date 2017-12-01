@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, QuickMortgageCalculator!</string>
+    <string name="app_name">JCmortga-mortgage Calculator</string>
+    <string name="loan_amount">Loan\nAmount</string>
+    <string name="rate">Custom\nYears</string>
+    <string name="ten_year">10 yr</string>
+    <string name="fifteen_year">15 yr</string>
+    <string name="thirty_year">30 yr</string>
+    <string name="five_percent">5years</string>
+    <string name="monthly_payment">Monthly\nPayment</string>
+    <string name="term">Term</string>
+    <string name="zero">0.00</string>
+    <string name="down_payment">Down\nPayment</string>
+    <string name="interest_rate">Interest\nRate</string>
+    <string name="custom_monthly">Custom\nMothly</string>
+</resources>
